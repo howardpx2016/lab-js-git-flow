@@ -3,18 +3,20 @@
 fizzbuzz(25);
 
 function fizzbuzz(max_val) {
+    let result;
     for(let i = 0; i <= max_val; i++) {
         if (i % 4 == 0 && i % 6 == 0) {
-            console.log("fizzbuzz");
+            result = "fizzbuzz";
         }
         else if (i % 4 == 0) {
-            console.log("fizz");
+            result = "fizz";
         }
         else if (i % 6 == 0) {
-            console.log("buzz");
+            result = "buzz";
         }
         else {
-            console.log(i);
+            result = i;
         }
+        console.log(result);
     }
 }
