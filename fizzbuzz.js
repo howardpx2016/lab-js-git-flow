@@ -1,6 +1,6 @@
 "use strict";
 
-fizzbuzz(25);
+fizzbuzz(60);
 
 function fizzbuzz(max_val) {
     let result;
@@ -16,6 +16,15 @@ function fizzbuzz(max_val) {
         }
         else {
             result = i;
+        }
+
+        if (i % 5 == 0) {
+            if (result == i) {
+                result = "bool";
+            }
+            else {
+                result += "bool";
+            }
         }
         console.log(result);
     }
